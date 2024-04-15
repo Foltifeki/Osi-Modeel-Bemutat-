@@ -29,9 +29,40 @@
     <main class="bg-blue-800/60 shadow-xl rounded-xl max-w-4xl mx-auto mt-10 p-6">
         <div>
             <h2 class="text-2xl mb-4">Kapcsolat felépítése és lebontása lépései.</h2>
-            <p></p>
+            <p class="mb-4">A kapcsolat felépítése és lebontása a hálózati kommunikációban kulcsfontosságú lépések. A TCP (Transmission Control Protocol) protokollt használva, a következő lépések történnek:</p>
 
+            <p class="mb-2 font-bold text-lg">Kapcsolat felépítése:</p>
+
+            <ul class="list-disc list-outside ml-5">
+                <li class="mb-2">Küldő kezdeményezi a folyamatot: A küldő generál egy véletlenszerű kezdeti szekvenciaszámot és elküldi azt a fogadónak.</li>
+
+                <li class="mb-2">Fogadó válasza: A fogadó generálja a saját véletlenszerű kezdeti szekvenciaszámát, majd elküldi azt a küldőnek, egyben megerősítve a küldő kezdeti szekvenciaszámát.</li>
+
+                <li class="mb-2">Küldő végleges válasza: A küldő megerősíti a fogadó kezdeti szekvenciaszámát, ezzel befejezve a kapcsolatfelépítést.</li>
+            </ul>
+
+            <p class="mt-4 mb-2 font-bold text-lg">Kapcsolat lebontása:</p>
+
+            <ul class="list-disc list-outside ml-5">
+                <li class="mb-2">Kliens FIN kérése: A kliens elküldi a FIN csomagot a szervernek, jelezve, hogy le szeretné zárni a kapcsolatot.</li>
+
+                <li class="mb-2">Szerver válasza: A szerver megkapja a FIN csomagot, majd elküldi a saját FIN csomagját és megerősíti a kliens FIN csomagját.</li>
+
+                <li class="mb-2">Kliens végleges válasza: A kliens megkapja a szerver FIN csomagját, majd megerősíti azt, ezzel befejezve a kapcsolat lebontását.</li>
+            </ul>
         </div>
     </main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -28,9 +28,20 @@
     </header>
     <main class="bg-blue-800/60 shadow-xl rounded-xl max-w-4xl mx-auto mt-10 p-6">
         <div>
-            <h2 class="text-2xl mb-4">+ Fázisu kézfogás.</h2>
-            <p></p>
+            <h2 class="text-2xl mb-4">3 Fázisu kézfogás.</h2>
+            <p>A 3 fázisú kézfogás, más néven TCP kézfogás, egy hálózati kommunikációs folyamat, amelyet a TCP/IP protokoll használ a kapcsolat létrehozására a kliens és a szerver között, mielőtt az adatátvitel megkezdődne.</p>
 
+            <p class="mt-4 mb-2 text-lg font-bold">A 3 fázisú kézfogás a következő lépésekből áll:</p>
+
+            <ul class="list-disc list-outside ml-5">
+                <li class="mb-2"><b>SYN (szinkronizáció) csomag küldése:</b> A kliens elküldi a SYN csomagot a szervernek. Ez a csomag egy véletlenszerű szekvenciaszámot tartalmaz, amelyet a kliens a kommunikáció során szeretne használni.</li>
+
+                <li class="mb-2"><b>SYN/ACK (szinkronizáció/nyugta) csomag küldése:</b> Amikor a szerver megkapja a SYN csomagot a klienstől, válaszul elküldi a saját SYN/ACK csomagját. Ez a csomag két szekvenciaszámot tartalmaz: az egyiket a szerver állítja be úgy, hogy egyet ad a klienstől kapott szekvenciaszámhoz, a másik pedig a szerver által küldött SYN csomag véletlenszerű szekvenciaszáma.</li>
+
+                <li class="mb-2"><b>ACK (nyugta) csomag küldése:</b> A kliens megkapja a szerver SYN/ACK csomagját, majd válaszul elküldi az ACK csomagot. Ebben a csomagban a kliens megerősíti a szerver szekvenciaszámát, hozzáadva egyet a szekvenciaszámhoz.</li>
+            </ul>
+
+            <p class="mt-4">Ez a folyamat biztosítja, hogy mindkét fél egyidejűleg kezdeményezhesse és tárgyalhassa a hálózati TCP socket kapcsolat paramétereit, mielőtt az adatok, például HTTP és SSH, átadásra kerülnének.</p>
         </div>
     </main>
 </body>
