@@ -10,7 +10,7 @@
     <header class="p-5 bg-gray-900 shadow-xl">
         <div class="flex">
             <div class="flex-none">
-                <h2 class="bg-blue-900 shadow-lg text-2xl rounded-md p-2 my-auto">Osi Modell</h2>
+                <h2 class="bg-blue-900 shadow-lg text-2xl rounded-md p-2 my-auto">HTTP :P</h2>
             </div>
             <div class="flex-auto">
                 <nav class="float-right">
@@ -37,7 +37,7 @@
             <div class="flex">
                 <div class="">
                     <p class="mb-2 font-bold">A HTTP protokoll a következőképpen működik:</p>
-                    <ul class="list-decimal list-outside ml-5">
+                    <ul class="list-disc list-outside ml-5">
                         <li class="mb-2">A kliens (általában egy webböngésző) HTTP kérést küld a webszervernek.</li>
                         <li class="mb-2">A webszerver megkapja a kérést, majd egy alkalmazást futtat a kérés feldolgozására.</li>
                         <li class="mb-2">A szerver HTTP választ (kimenetet) küld vissza a böngészőnek.</li>
@@ -56,7 +56,7 @@
         <div class="flex">
             <div class="text-pretty">
                 <p class="font-bold mb-2">A HTTPS tulajdonságai:</p>
-                <ul class="list-decimal list-outside ml-5">
+                <ul class="list-disc list-outside ml-5">
                     <li class="mb-2">Az HTTPS a Transport Layer Security (TLS), korábban Secure Sockets Layer (SSL) protokollt használja az adatok titkosítására.</li>
                     <li class="mb-2">Az HTTPS használata különösen fontos, amikor a felhasználók érzékeny adatokat továbbítanak, például banki fiókba, e-mail szolgáltatásba történő bejelentkezéskor.</li>
                     <li class="mb-2">Az HTTPS használatakor az adatokat úgy titkosítják, hogy ha a csomagokat lehallgatják vagy másképpen elfogják, azok értelmetlen karakterekként jelennek meg.</li>
@@ -70,26 +70,34 @@
             </div>
         </div>
         <div>
-            <h2>HTTP <> HTTPS</h2>
-            <p></p>
+            <h2 class="text-2xl font-bold mb-6">HTTP <> HTTPS</h2>
+            <div class="flex text-pretty">
+                <div class="">
+                    <p class="font-bold mb-2">HTTP:</p>
+                    <ul class="list-disc list-outside ml-5">
+                        <li class="mb-2">A HTTP egy alkalmazásréteg-protokoll, amely lehetővé teszi a böngészők és a webszerverek közötti kommunikációt.</li>
+                        <li class="mb-2">Az adatokat nyílt szövegként (plain text) továbbítja, ami biztonsági kockázatot jelenthet, mivel a továbbított információkat illetéktelenek is könnyen elérhetik.</li>
+                        <li class="mb-2">Az HTTP az 80-as porton keresztül kommunikál.</li>
+                    </ul>
+                </div>
+                <div class="ml-6">
+                    <p class="font-bold mb-2">HTTPS:</p>
+                    <ul class="list-disc list-outside ml-5">
+                        <li class="mb-2"> Az HTTPS az HTTP biztonságos változata, amely titkosítást használ az adatok védelme érdekében.</li>
+                        <li class="mb-2">Az SSL/TLS (Secure Sockets Layer/Transport Layer Security) tanúsítványok segítségével titkosítja a kommunikációt, így biztosítva, hogy az adatok biztonságban maradjanak a továbbítás során.</li>
+                        <li class="mb-2">Az HTTPS a 443-as porton keresztül kommunikál.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-               
-        HTTP:
-
-        Az HTTP egy alkalmazásréteg-protokoll, amely lehetővé teszi a böngészők és a webszerverek közötti kommunikációt.
-        Az adatokat nyílt szövegként (plain text) továbbítja, ami biztonsági kockázatot jelenthet, mivel a továbbított információkat illetéktelenek is könnyen elérhetik.
-        Az HTTP az 80-as porton keresztül kommunikál.
-        HTTPS:
-        
-        Az HTTPS az HTTP biztonságos változata, amely titkosítást használ az adatok védelme érdekében.
-        Az SSL/TLS (Secure Sockets Layer/Transport Layer Security) tanúsítványok segítségével titkosítja a kommunikációt, így biztosítva, hogy az adatok biztonságban maradjanak a továbbítás során.
-        Az HTTPS a 443-as porton keresztül kommunikál.
-        
-        Összehasonlítás:
-
-        Biztonság: Az HTTPS titkosítást használ, így biztonságosabb, mint az HTTP. Az SSL/TLS tanúsítványok hozzáadása növeli a biztonságot és a felhasználók bizalmát.
-        SEO előnyök: A Google és más keresőmotorok előnyben részesítik az HTTPS-t használó weboldalakat, ami jobb rangsorolást eredményezhet.
-        Teljesítmény: Az HTTPS használata némileg lassíthatja a weboldal betöltési idejét a titkosítás miatt, de a modern technológiák ezt a különbséget minimalizálják.
+        <div>
+            <h2 class="text-xl font-bold mb-6 mt-10">Összehasonlítás:</h2>
+            <ul class="list-disc list-outside ml-5">
+                <li class="mb-2"><b>Biztonság:</b> Az HTTPS titkosítást használ, így biztonságosabb, mint az HTTP. Az SSL/TLS tanúsítványok hozzáadása növeli a biztonságot és a felhasználók bizalmát.</li>
+                <li class="mb-2"><b>SEO előnyök:</b> A Google és más keresőmotorok előnyben részesítik az HTTPS-t használó weboldalakat, ami jobb rangsorolást eredményezhet.</li>
+                <li class="mb-2"><b>Teljesítmény:</b> Az HTTPS használata némileg lassíthatja a weboldal betöltési idejét a titkosítás miatt, de a modern technológiák ezt a különbséget minimalizálják.</li>
+            </ul>
+        </div>
     </main>
 </body>
 </html>
