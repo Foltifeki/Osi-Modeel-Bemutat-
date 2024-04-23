@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Az OSI Modell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    <header class="p-5 bg-gray-900 shadow-xl">
+        <div class="flex">
+            <div class="flex-none">
+                <h2 class="bg-blue-900 shadow-lg text-2xl rounded-md p-2 my-auto">Osi Modell</h2>
+            </div>
+            <div class="flex-auto">
+                <nav class="float-right">
+                    <ul class="flex space-x-4">
+                        <a href="index.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 1</li></a>
+                        <a href="index2.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 2</li></a>
+                        <a href="index3.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 3</li></a>
+                        <a href="index4.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 4</li></a>
+                        <a href="index5.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 5</li></a>
+                        <a href="index6.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 6</li></a>
+                        <a href="index7.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 7</li></a>
+                        <a href="index8.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 8</li></a>
+                        <a href="index9.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 9</li></a>
+                        <a href="index10.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 10</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="bg-blue-800/60 shadow-xl rounded-xl max-w-4xl mx-auto mt-10 p-6">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold mb-5">HTTP</h2>
+            <p class="mb-6">A HTTP (Hypertext Transfer Protocol) egy alkalmazásrétegű protokoll, amelyet a World Wide Web (WWW) alapjául szolgáló adatok, például HTML dokumentumok lekérésére használnak. A HTTP a kliens-szerver kommunikáció alapja, ami azt jelenti, hogy a kéréseket a fogadó, általában a webböngésző kezdeményezi.</p>
+            <div class="flex">
+                <div class="">
+                    <p class="mb-2 font-bold">A HTTP protokoll a következőképpen működik:</p>
+                    <ul class="list-decimal list-outside ml-5">
+                        <li class="mb-2">A kliens (általában egy webböngésző) HTTP kérést küld a webszervernek.</li>
+                        <li class="mb-2">A webszerver megkapja a kérést, majd egy alkalmazást futtat a kérés feldolgozására.</li>
+                        <li class="mb-2">A szerver HTTP választ (kimenetet) küld vissza a böngészőnek.</li>
+                        <li class="mb-2">A kliens (a böngésző) megkapja a választ.</li>
+                    </ul>
+                </div>
+                <div class="w-96">
+                    <p class="">A HTTP protokoll extenzíbilis, ami azt jelenti, hogy idővel fejlődött és alkalmazkodott az internet változó igényeihez2. A HTTP-t nem csak hipertext dokumentumok lekérésére használják, hanem képek és videók lekérésére, tartalom feltöltésére a szerverekre, mint például HTML űrlap eredmények, valamint a dokumentumok részeinek lekérésére a weboldalak frissítéséhez.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold mb-5">HTTPS</h2>
+            <p class="mb-6">Az HTTPS (Hypertext Transfer Protocol Secure) egy biztonságos protokoll, amelyet a World Wide Web (WWW) alapjául szolgáló adatok, például HTML dokumentumok lekérésére használnak. Az HTTPS az HTTP protokoll biztonságos változata, amely titkosítja az adatokat a biztonságos adatátvitel érdekében.</p>
+        </div>
+        <div>
+            <p>A HTTPS tulajdonságai:</p>
+            <ul class="list-decimal list-outside ml-5">
+                <li class="mb-2">Az HTTPS a Transport Layer Security (TLS), korábban Secure Sockets Layer (SSL) protokollt használja az adatok titkosítására.</li>
+                <li class="mb-2">Az HTTPS használata különösen fontos, amikor a felhasználók érzékeny adatokat továbbítanak, például banki fiókba, e-mail szolgáltatásba történő bejelentkezéskor.</li>
+                <li class="mb-2">Az HTTPS használatakor az adatokat úgy titkosítják, hogy ha a csomagokat lehallgatják vagy másképpen elfogják, azok értelmetlen karakterekként jelennek meg.</li>
+                <li class="mb-2">Az HTTPS használatakor az internetes szolgáltatók (ISP-k) vagy más közvetítők nem tudnak tartalmat injektálni a weboldalakba a weboldal tulajdonosának jóváhagyása nélkül.</li>
+            </ul>
+            
+            HTTP:
+
+            Az HTTP egy alkalmazásréteg-protokoll, amely lehetővé teszi a böngészők és a webszerverek közötti kommunikációt.
+            Az adatokat nyílt szövegként (plain text) továbbítja, ami biztonsági kockázatot jelenthet, mivel a továbbított információkat illetéktelenek is könnyen elérhetik.
+            Az HTTP az 80-as porton keresztül kommunikál.
+            HTTPS:
+            
+            Az HTTPS az HTTP biztonságos változata, amely titkosítást használ az adatok védelme érdekében.
+            Az SSL/TLS (Secure Sockets Layer/Transport Layer Security) tanúsítványok segítségével titkosítja a kommunikációt, így biztosítva, hogy az adatok biztonságban maradjanak a továbbítás során.
+            Az HTTPS a 443-as porton keresztül kommunikál.
+            
+            Összehasonlítás:
+
+            Biztonság: Az HTTPS titkosítást használ, így biztonságosabb, mint az HTTP. Az SSL/TLS tanúsítványok hozzáadása növeli a biztonságot és a felhasználók bizalmát.
+            SEO előnyök: A Google és más keresőmotorok előnyben részesítik az HTTPS-t használó weboldalakat, ami jobb rangsorolást eredményezhet.
+            Teljesítmény: Az HTTPS használata némileg lassíthatja a weboldal betöltési idejét a titkosítás miatt, de a modern technológiák ezt a különbséget minimalizálják.
+            
+
+            
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
