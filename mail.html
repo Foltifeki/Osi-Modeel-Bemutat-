@@ -30,33 +30,44 @@
             </div>
         </div>
     </header>
-    <main class="bg-blue-800/60 shadow-xl rounded-xl max-w-4xl mx-auto mt-10 p-6 text-balance">
+    <main class="bg-blue-800/60 shadow-xl rounded-xl max-w-4xl mx-auto mt-10 p-6 text-pretty">
         <div>
-            Az e-mail protokollok olyan szabványok és eljárások gyűjteménye, amelyeket az e-mailek küldésére és fogadására használnak. Ezek a protokollok lehetővé teszik a kliens számára, hogy az e-mailt a kívánt levelezőszerverre vagy onnan továbbítsa. Az e-mail protokollok a következő három alapvető típusba sorolhatók:
-
-SMTP (Simple Mail Transfer Protocol):
-Az SMTP az Internetes Levélátviteli Protokoll rövidítése.
-Az interneten keresztül történő e-mailek küldésére szolgál.
-Az SMTP hatékony és megbízható a levelek küldéséhez.
-A TCP-t használja a szállítási réteg protokolljaként.
-Az SMTP kezeli az e-mail üzenetek küldését és fogadását az e-mail szerverek között egy TCP/IP hálózaton keresztül.
-Az SMTP nemcsak az e-mailek küldését teszi lehetővé, hanem értesítést is nyújt az érkező e-mailekről.
-Példa SMTP parancsok: HELLO, MAIL FROM, RCPT TO, DATA, QUIT, VERIFY, SIZE stb.
-POP3 (Post Office Protocol):
-A POP3 az Postai Iroda Protokoll rövidítése.
-Az egyetlen kliens számára e-mail lekérésére szolgál.
-A POP3 lehetővé teszi az offline hozzáférést az e-mailekhez, így kevesebb internetidőt igényel.
-A letöltéshez először le kell tölteni az üzenetet.
-Csak egyetlen postafiókot engedélyez a levelezőszerveren.
-Példa POP3 parancsok: LOG IN, STAT, LIST, RETR, DELE, RSET, QUIT stb.
-IMAP (Internet Message Access Protocol):
-Az IMAP az Internetes Üzenet Hozzáférési Protokoll rövidítése.
-Több kliens számára e-mailek lekérésére szolgál.
-Az e-mailek távoli szerveren vannak tárolva.
-Az IMAP lehetővé teszi az e-mailek letöltése nélküli hozzáférést és a keresést.
-Több postafiókot lehet létrehozni több levelezőszerveren, és egyidejű hozzáférést engedélyez.
-Példa IMAP parancsok: IMAP_LOGIN, CREATE, DELETE, RENAME, SELECT, EXAMINE, LOGOUT stb.
-Az e-mail protokollok tehát kulcsfontosságúak a hálózati kommunikációban, mivel lehetővé teszik az e-mailek hatékony továbbítását és kezelését. Ha további kérdése van, szívesen segítek!.
+            <div>
+                <h2 class="text-2xl font-bold">E-mail protokollok</h2>
+                <p class="mt-6">Az e-mail protokollok olyan szabványok és eljárások gyűjteménye, amelyeket az e-mailek küldésére és fogadására használnak. Ezek a protokollok lehetővé teszik a kliens számára, hogy az e-mailt a kívánt levelezőszerverre vagy onnan továbbítsa.</p>
+                <p class="mt-4">Az e-mail protokollok a következő három alapvető típusba sorolhatók:</p>
+            </div>
+            <div>
+                <ul class="list-disc list-outside ml-5">
+                    <li class="mb-2 mt-4"> 
+                        <b>SMTP (Simple Mail Transfer Protocol):</b> <br> 
+                        <p>Az SMTP az Internetes Levélátviteli Protokoll rövidítése.
+                            Az interneten keresztül történő e-mailek küldésére szolgál.
+                            A TCP-t használja a szállítási réteg protokolljaként.
+                            Az SMTP kezeli az e-mail üzenetek küldését és fogadását az e-mail szerverek között egy TCP/IP hálózaton keresztül.
+                            Az SMTP nemcsak az e-mailek küldését teszi lehetővé, hanem értesítést is nyújt az érkező e-mailekről.
+                            Példa SMTP parancsok: HELLO, MAIL FROM, RCPT TO, DATA, QUIT, VERIFY, SIZE stb.</p>
+                    </li>
+                    <li class="mb-2">
+                        <b>POP3 (Post Office Protocol):</b> <br>
+                        <p> POP3 az Postai Iroda Protokoll rövidítése.
+                            Az egyetlen kliens számára e-mail lekérésére szolgál.
+                            A POP3 lehetővé teszi az offline hozzáférést az e-mailekhez, így kevesebb internetidőt igényel.
+                            A letöltéshez először le kell tölteni az üzenetet.
+                            Csak egyetlen postafiókot engedélyez a levelezőszerveren.
+                            Példa POP3 parancsok: LOG IN, STAT, LIST, RETR, DELE, RSET, QUIT stb.</p>
+                    </li>
+                    <li class="mb-2">
+                        <b>IMAP (Internet Message Access Protocol):</b> <br>
+                        <p>Az IMAP az Internetes Üzenet Hozzáférési Protokoll rövidítése.
+                            Több kliens számára e-mailek lekérésére szolgál.
+                            Az e-mailek távoli szerveren vannak tárolva.
+                            Az IMAP lehetővé teszi az e-mailek letöltése nélküli hozzáférést és a keresést.
+                            Több postafiókot lehet létrehozni több levelezőszerveren, és egyidejű hozzáférést engedélyez.
+                            Példa IMAP parancsok: IMAP_LOGIN, CREATE, DELETE, RENAME, SELECT, EXAMINE, LOGOUT stb.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
 </body>
