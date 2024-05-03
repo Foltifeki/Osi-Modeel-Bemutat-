@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Az OSI Modell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    <header class="p-5 bg-gray-900 shadow-xl">
+        <div class="flex">
+            <div class="flex-none">
+                <h2 class="bg-blue-900 shadow-lg text-2xl rounded-md p-2 my-auto">Osi Modell</h2>
+            </div>
+            <div class="flex-auto">
+                <nav class="float-right">
+                    <ul class="flex space-x-4">
+                        <a href="index.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 1</li></a>
+                        <a href="index2.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 2</li></a>
+                        <a href="index3.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 3</li></a>
+                        <a href="index4.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 4</li></a>
+                        <a href="index5.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 5</li></a>
+                        <a href="index6.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 6</li></a>
+                        <a href="index7.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 7</li></a>
+                        <a href="index8.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 8</li></a>
+                        <a href="index9.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 9</li></a>
+                        <a href="index10.html"><li class="bg-blue-800 p-2 rounded-md hover:bg-blue-500">Page 10</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="bg-blue-800/60 shadow-xl rounded-xl max-w-4xl mx-auto mt-10 p-6 text-pretty">
+        <div>
+            <h2 class="font-bold text-2xl mb-6">FTP, FTPS, SFTP</h2>
+
+            <p class="mb-4">Az FTP (File Transfer Protocol) egy hálózati protokoll, amelyet fájlok átvitelére használnak egy kliens és egy szerver között. Az FTP lehetővé teszi a felhasználók számára, hogy fájlokat töltsenek fel és töltsenek le egy távoli számítógépről.</p>
+            <div>
+                <h2 class="font-bold mb-2">Az FTP a következőképpen működik:</h2>
+                <ul class="list-disc list-outside ml-5">
+                    <li class="mb-2">
+                        Az FTP kliens-szerver modellt használ, ahol a kliens (általában egy számítógép) kapcsolatot létesít egy FTP szerverrel (másik számítógép), és fájlokat küld vagy fogad.
+                    </li>
+                    <li class="mb-2">
+                        Az FTP lehetővé teszi a felhasználók számára, hogy fájlokat töltsenek fel a szerverre, letöltsenek fájlokat a szerverről, és kezeljék a szerveren lévő fájlokat (például fájlok átnevezése, törlése stb.).
+                    </li>
+                    <li class="mb-2">
+                        Az FTP két kommunikációs csatornát használ: a parancscsatornát és az adatcsatornát. A parancscsatorna a kliens és a szerver közötti kommunikációért felelős, míg az adatcsatorna az adatok átviteléért felelős.
+                    </li>
+                    <li class="mb-2">
+                        Az FTP két módban működhet: aktív és passzív. Az aktív módban a szerver kezdeményezi az adatcsatorna létrehozását, míg a passzív módban a kliens kezdeményezi az adatcsatorna létrehozását.
+                    </li>
+                </ul>
+            </div>
+            <div class="flex">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">FTPS</h2>
+                    <p>Az FTPS (File Transfer Protocol Secure) az FTP biztonságos változata, amely támogatja a Transport Layer Security (TLS) és a korábban használt Secure Sockets Layer (SSL) kriptográfiai protokollokat. Az FTPS lehetővé teszi a felhasználók számára, hogy biztonságosan csatlakozzanak a kereskedelmi partnerekhez, ügyfelekhez és felhasználókhoz2. Az FTPS titkosítja az adatokat, és támogatja a jelszavak, kliens tanúsítványok és szerver tanúsítványok által támogatott hitelesítési módszereket.</p>
+                    
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">SFTP</h2>
+                    <p>Az SFTP (Secure File Transfer Protocol) egy fájlátviteli protokoll, amely az SSH titkosítást használja a rendszerek közötti fájlok biztonságos átvitelére. Az SFTP lehetővé teszi a felhasználók számára, hogy válasszák ki a hitelesítés szintjét, amikor fájlokat továbbítanak. A felhasználók az SFTP-vel továbbíthatnak fájlokat anélkül, hogy hozzáadnának hitelesítést, felhasználói azonosítót és jelszót használva, vagy SSH kulcspárt használva.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
